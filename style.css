@@ -1,0 +1,87 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://source.unsplash.com/1920x1080/?music,instrument,dark);
+    background-repeat: no-repeat;
+    overflow: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+ /* ********************    navigation bar  ******************** */
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #42413c7c;
+    height: 5rem;
+    overflow: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+
+
+}
+
+.logo img{
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.nav-item{
+    padding: 15px;
+    /* background-color: aqua; */
+}
+
+.nav-item:hover{
+    background-color:khaki;
+    color: black;
+    
+}
+.logo:hover{
+        pointer-events: none;
+}
+
+/* main Content */
+
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #e7e6e2;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+  
